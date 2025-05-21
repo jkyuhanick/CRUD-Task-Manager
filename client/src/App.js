@@ -4,7 +4,7 @@ import Axios from 'axios';
 
 function App() {
 
-  const [taskText, setTaskTest] = useState('');
+  const [taskText, setTaskText] = useState('');
   const [priority, setPriority] = useState('');
   const [taskList, setTaskList] = useState([]);
   const [updatedTask, setUpdatedTask] = useState('');
@@ -27,8 +27,11 @@ function App() {
     Axios.post('http://localhost:3001/api/tasks', {
       text: taskText,
       priority: priority
-    }).then(() => {
-     setTaskList([ ...taskList, {text: taskText, priority: priority}]);
+    }).then((res) => {
+      const newTask = res.data; 
+      setTaskList([ ...taskList, newTask ]);
+      setTaskText('');
+      setPriority('');
    }).catch((error) => {
      console.error('Error adding task: ', error);
    })
@@ -63,7 +66,7 @@ function App() {
       <div className='form'>
         <label>Task:</label>
         <input id="task-text" type="text" name="task" onChange={(e) => {
-          setTaskTest(e.target.value)
+          setTaskText(e.target.value)
         }}/>
         <select id="dropdown" name="priority" onChange={(e) => {
           setPriority(e.target.value)}}
