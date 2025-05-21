@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input{
+  width: 60vw;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid hsl(0, 0%, 80%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+}
+
+#task-text {
+  padding: 0px;
+  margin-right: 5px;
+  height: 40px;
+}
+
+#dropdown {
+  padding: 0px;
+  height: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 5px;
+  border: 2px solid hsl(0, 0%, 80%);
+}
+
+.form label {
+  font-size: 25px;
+}
+
+.form select {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  padding: 10px;
+}
+
+.card {
+  width: 80vh;
+  height: 270px;
+  margin: 10px;
+}
+
+.priority-low {
+  border-left: 6px solid hsl(120, 20%, 46%);
+  background-color: hsl(120, 20%, 90%);
+}
+
+.priority-medium {
+  border-left: 6px solid hsl(39, 100%, 63%);
+  background-color: hsl(39, 100%, 90%);
+}
+
+.priority-high {
+  border-left: 6px solid hsl(0, 58%, 53%);
+  background-color:  hsl(0, 58%, 90%);
+}
+
+button{
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 5px;
+  border: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 80%);
+}
+
+#update-input {
+  font-size: smaller;
+  display: flex;
+  flex-direction: row;
+}

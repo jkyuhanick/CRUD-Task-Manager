@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+}
+
+.form input{
+  width: 80vw;
+  margin: 10px;
+}
+
+#task-text {
+  padding: 10px;
+}

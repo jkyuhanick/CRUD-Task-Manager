@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input{
+  width: 80vw;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#task-text {
+  padding: 0px;
+  margin-right: 5px;
+  height: 40px;
+}
+
+#dropdown {
+  padding: 0px;
+  height: 40px;
+}
+
+.label {
+  font-size: 20px;
+}

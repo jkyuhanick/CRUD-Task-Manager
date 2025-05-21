@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input{
+  width: 60vw;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#task-text {
+  padding: 0px;
+  margin-right: 5px;
+  height: 40px;
+}
+
+#dropdown {
+  padding: 0px;
+  height: 40px;
+}
+
+.form label {
+  font-size: 25px;
+}
+
+.form select {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  padding: 10px;
+}
+
+.card {
+  width: 80vh;
+  height: 100px;
+  margin: 10px;
+}
